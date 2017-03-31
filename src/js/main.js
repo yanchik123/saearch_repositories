@@ -1,0 +1,1 @@
+var myApp = angular.module('MyApp',['ngMaterial', 'ngMessages', 'ui.router']);

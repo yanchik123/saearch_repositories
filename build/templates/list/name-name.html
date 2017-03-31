@@ -1,0 +1,13 @@
+<div class="central-block">
+    <md-content>
+        <md-list flex>
+            <md-list-item ui-sref="single-name-name({login: item.login})" class="md-3-line" ng-repeat="item in items" ng-click="null">
+                <img ng-src="{{item.avatar_url}}?{{$index}}" class="md-avatar" alt="{{item.owner.login}}" />
+                <div class="md-list-item-text" layout="column">
+                    <h3>{{ item.login }}</h3>
+                    <h4>{{ item.id }}</h4>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</div>

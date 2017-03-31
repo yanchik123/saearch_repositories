@@ -1,0 +1,41 @@
+<div class="central-block-single">
+    <md-card class="single">
+        <img ng-src="{{items.owner.avatar_url}}" class="md-card-image" alt="{{items.owner.login}}">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{items.owner.login}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+               Название репозитория: {{items.name}}
+            </p>
+            <p>
+               Id: {{items.id}}
+            </p>
+            <p>
+               Описание: {{items.description}}
+            </p>
+            <p>
+               Создан: {{items.created_at}}
+            </p>
+            <p>
+               Язык: {{items.language}}
+            </p>
+            <p>
+               Просмотров: {{items.watchers}}
+            </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <!--<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>-->
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+                <!--<md-icon md-svg-icon="img/icons/menu.svg"></md-icon>-->
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <!--<md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>-->
+            </md-button>
+        </md-card-actions>
+    </md-card>
+</div>

@@ -1,0 +1,40 @@
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+md-toolbar,
+.md-toolbar-tools {
+  min-height: 56px !important;
+}
+.central-block {
+  position: absolute;
+  width: 30%;
+  top: calc(50% - 25% );
+  left: 35%;
+}
+.central-block-single {
+  position: absolute;
+  width: 20%;
+  top: calc(50% - 25% );
+  left: 40%;
+}
+.central-block md-content {
+  max-height: 424px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.central-block md-content .list {
+  border-bottom: 1px solid #d6d6d6;
+  padding: 15px;
+}
+.central-block .img-git {
+  background-image: url('https://assets-cdn.github.com/images/modules/logos_page/Octocat.png');
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}

@@ -1,0 +1,20 @@
+<div class="central-block">
+    <div ng-controller="name-reposCtrl" ng-cloak="" class="buttondemoBasicUsage">
+        <md-content>
+            <form name="projectForm">
+                <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+                    <!--<div class="img-git"></div>-->
+                    <md-input-container class="md-block">
+                        <label>{{name}}</label>
+                        <input md-maxlength="30" minlength="3" required md-no-asterisk name="description" ng-model="description">
+                        <div ng-messages="projectForm.description.$error">
+                            <div ng-message="required">Введите название репозитория.</div>
+                            <div ng-message="minlength">Введите больше трех символов.</div>
+                        </div>
+                    </md-input-container>
+                    <md-button ui-sref="list-name-repos({query: description})" ng-disabled="description.length == description.minlength || description.length == 0 " class="md-raised md-primary">{{ button }}</md-button>
+                </section>
+            </form>
+        </md-content>
+    </div>
+</div>

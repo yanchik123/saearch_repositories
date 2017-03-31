@@ -1,0 +1,38 @@
+<div class="central-block-single">
+    <md-card class="single">
+        <img ng-src="{{items.avatar_url}}" class="md-card-image" alt="{{items.login}}">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{items.name}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+                Логин: {{items.login}}
+            </p>
+            <p>
+                Id: {{items.id}}
+            </p>
+            <p>
+                E-mail: {{items.email}}
+            </p>
+            <p>
+                Страна проживания: {{items.location}}
+            </p>
+            <p>
+                Количество публичных репозиториев: {{items.public_repos}}
+            </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <!--<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>-->
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+                <!--<md-icon md-svg-icon="img/icons/menu.svg"></md-icon>-->
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <!--<md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>-->
+            </md-button>
+        </md-card-actions>
+    </md-card>
+</div>
